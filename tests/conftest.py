@@ -1,4 +1,15 @@
+import os
+import sys
+
 import pytest
+
+# Añadir la raíz del proyecto al path de Python
+sys.path.insert(
+    0,
+    os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+)
+
+from app import crear_app
 from app import crear_app
 
 
